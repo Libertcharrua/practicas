@@ -215,3 +215,45 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
 Pseudoelementos - Dan estilos a partes específicas de un elemento, se usa el :: para diferenciarlos de las pseudoclases
 https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos
 */
+
+.saga-geminis::before{
+  content:"🤼 ";
+}
+.saga-geminis::after{
+  content: "♊";
+}
+.saga-precio::before{
+  content: "💲";
+}
+.saga-precio::after{
+  content: "U$D";
+}
+.p-pseudoelementos::first-letter{
+  font-weight: bold;
+  font-size: 32px;
+}
+.p-pseudoelementos::first-line{
+  color: coral;
+}
+
+.p-pseudoelementos::selection{
+  color: greenyellow;
+  background: black;
+}
+
+.input-pseudoelementos::placeholder{
+  color: green;
+}
+
+/*Agrupar selectores*/
+
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea{
+  border-color: yellow;
+  border-style: dashed;
+  background: rgb(192, 214, 202);
+  font-size: 20px;
+  display: block;
+  width: 300px;
+}
